@@ -25,7 +25,7 @@
     z-index: 1;
     display: flex;
     /* transition-property: transform; */
-    /* box-sizing: content-box; */
+    box-sizing: content-box;
 }
 .swiper-slide{
     background-position: center;
