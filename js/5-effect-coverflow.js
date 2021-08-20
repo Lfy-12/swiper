@@ -14,7 +14,7 @@ window.onload = function(){
     }
     wrapper.style.transform = 'translate3d(500px,0px,0px)';
 
-    // 小圆点
+    // 小圆点11
     for(let i=0;i<slide.length;i++){
         const span = document.createElement('span');
         dotBox.append(span)

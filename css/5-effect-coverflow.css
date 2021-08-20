@@ -24,7 +24,7 @@
     height: 100%;
     z-index: 1;
     display: flex;
-    /* transition-property: transform; */
+    transition-property: transform;
     box-sizing: content-box;
 }
 .swiper-slide{
