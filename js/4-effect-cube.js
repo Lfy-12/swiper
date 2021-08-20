@@ -30,7 +30,12 @@ window.onload = function(){
         }
 
         slide[i].style.transform = `rotateY(${90*i}deg) translate3d(${tx}px,0px,${tz}px)` ;
+        slide[i].style.visibility = 'hidden';
     }
+
+     // 层级
+     slide[0].style.visibility = 'visible';
+     slide[1].style.visibility = 'visible';
 
     // 小圆点
     for(let i=0;i<slide.length;i++){
@@ -38,10 +43,6 @@ window.onload = function(){
         dotBox.append(span)
     }
     dots[0].className = 'active';
-
-    // 层级
-    slide[0].style.zIndex = 2;
-    slide[1].style.zIndex = 2;
 
     // 鼠标滑动，切换图片
     wrapper.addEventListener('mousedown',function(event){
@@ -65,7 +66,7 @@ window.onload = function(){
                 document.removeEventListener('mousemove',moveFunc);
             }
             wrapper.style.transform = `rotateY(${-90*index + step}deg)`;
-            wrapper.style.transition = '0.5s';
+            wrapper.style.transition = '0.5';
         }
         function cancelMove(event){
             document.removeEventListener('mousemove',moveFunc);
@@ -76,20 +77,20 @@ window.onload = function(){
                 if(index == -1) index =0;
                 if(index == slide.length) index = slide.length -1;
                 wrapper.style.transform = `rotateY(${-90*index}deg)`;
-                wrapper.style.transition = '1s';
+                wrapper.style.transition = '0.5s';
                 
                 for(let v of slide){
-                    v.style.zIndex = 1;
+                    v.style.visibility = 'hidden';
                 }
                 if(index == 0){
-                    slide[index+1].style.zIndex = 2;
+                    slide[index+1].style.visibility = 'visible';
                 }else if(index == slide.length -1){
-                    slide[index-1].style.zIndex = 2;
+                    slide[index-1].style.visibility = 'visible';
                 }else{
-                    slide[index-1].style.zIndex = 2;
-                    slide[index+1].style.zIndex = 2;
+                    slide[index-1].style.visibility = 'visible';
+                    slide[index+1].style.visibility = 'visible';
                 }
-                slide[index].style.zIndex = 2;
+                slide[index].style.visibility = 'visible';
 
                 for(let i=0;i<dots.length;i++){
                     dots[i].className = ''

@@ -8,7 +8,7 @@
     margin-top: -150px;
     cursor: grab;
     perspective: 1200px;
-    z-index: 1;
+    z-index: 0;
 }
 ::-webkit-scrollbar {
     display: none; /* Chrome Safari */
