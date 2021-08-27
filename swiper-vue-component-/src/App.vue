@@ -24,7 +24,10 @@ export default {
       arr: [ require('./assets/nature-1.jpg'), 
       require('./assets/nature-2.jpg'), 
       require('./assets/nature-3.jpg'),
-      require('./assets/nature-4.jpg')]
+      require('./assets/nature-4.jpg'),
+      require('./assets/nature-5.jpg'),
+      require('./assets/nature-6.jpg'),
+      ]
     }
   }
 }
