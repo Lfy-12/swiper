@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <Swiper :infinityLoop="true" pagination="dot">
+    <!-- 测试用例 -->
+    <Swiper pagination="dot" :infinityLoop="true" :autoplay="true">
       <SwiperItem v-for="(item, index) in arr" :key="index">
           <img :src="item" />
       </SwiperItem>

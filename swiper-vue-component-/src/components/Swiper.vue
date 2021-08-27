@@ -28,17 +28,17 @@ export default {
     SwiperIndicator
   },
   props: {
-    // 轮播图切换时间间隔
+    // 切换一个轮播图的过渡时间
     duration: {
       type: Number,
       default: 300
     },
-    // 切换一个轮播图的过渡时间
+    // 轮播图切换时间间隔
     interval: {
       type: Number,
       default: 1700
     },
-    // 显示器类型
+    // 分页器类型
     pagination: {  
       type: String,
       default: 'dot' 
