@@ -80,7 +80,11 @@ window.onload = function(){
         if(index == 0){
             button_prev.style.color = 'grey';
             button_prev.disabled = true;
+            button_next.style.color = 'skyblue';
+            button_next.disabled = false;
         }else if(index == slide.length-1){
+            button_prev.style.color = 'skyblue';
+            button_prev.disabled = false;
             button_next.style.color = 'grey';
             button_next.disabled = true;
         }else{

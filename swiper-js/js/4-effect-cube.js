@@ -66,7 +66,7 @@ window.onload = function(){
                 document.removeEventListener('mousemove',moveFunc);
             }
             wrapper.style.transform = `rotateY(${-90*index + step}deg)`;
-            wrapper.style.transition = '0.5';
+            wrapper.style.transition = '0.3s';
         }
         function cancelMove(event){
             document.removeEventListener('mousemove',moveFunc);
@@ -77,7 +77,7 @@ window.onload = function(){
                 if(index == -1) index =0;
                 if(index == slide.length) index = slide.length -1;
                 wrapper.style.transform = `rotateY(${-90*index}deg)`;
-                wrapper.style.transition = '0.5s';
+                wrapper.style.transition = '0.3s';
                 
                 for(let v of slide){
                     v.style.visibility = 'hidden';
