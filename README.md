@@ -13,26 +13,26 @@ demo文件夹中：
 
 针对上面的模型封装组件
 
-**Swiper 切换**
+#### **Swiper 切换**
 
 - 自动轮播
 - 鼠标按下拖动切换图片
 - 左右箭头切换图片
 - 点击dot小圆点分页器切换图片
 
-**Swiper Props**   
+#### **Swiper Props**   
 
-| Prop         | Type    | Description                                        | Default |
-| ------------ | ------- | -------------------------------------------------- | ------- |
-| duration     | Number  | 切换一个轮播图的过渡时间                           | 300ms   |
-| interval     | Number  | 轮播图切换时间间隔                                 | 1700ms  |
-| pagination   | String  | 分页器类型(可选值为:dot\|progress)(小圆点\|进度条) | dot     |
-| infinityLoop | Boolean | 是否循环轮播                                       | false   |
-| autoplay     | Boolean | 是否自动播放                                       | false   |
+| Prop         | Type    | Description                        | Default |
+| ------------ | ------- | ---------------------------------- | ------- |
+| duration     | Number  | 切换一个轮播图的过渡时间           | 300ms   |
+| interval     | Number  | 轮播图切换时间间隔                 | 1700ms  |
+| pagination   | String  | 分页器类型(可选值为:dot\|progress) | dot     |
+| infinityLoop | Boolean | 是否循环轮播                       | false   |
+| autoplay     | Boolean | 是否自动播放                       | false   |
 
-**测试用例**
+#### **测试用例**
 
-```javascript
+```vue
 <Swiper pagination="dot" :infinityLoop="true" :autoplay="true">
     <SwiperItem v-for="(item, index) in arr" :key="index">
     	<img :src="item" />
